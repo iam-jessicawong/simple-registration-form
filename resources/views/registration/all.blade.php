@@ -53,7 +53,7 @@
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Edit data registrasi</h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -96,7 +96,7 @@
                   <h5>Apakah anda yakin ingin menghapus data pendaftaran ini?</h5>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batalkan</button>
+                  <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Batalkan</button>
                   <form action="{{ route('destroy', $registration->id) }}" method="POST" class="d-inline-block">
                     @csrf
                     @method('DELETE')
